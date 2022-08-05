@@ -123,7 +123,7 @@ async function getCourseGradesReport(req, res, next) {
           lowest: item.lowest,
         };
       });
-      res.status(200).json({ courseObject: formatedResponse });
+      res.status(200).json({ courseGradesReport: formatedResponse });
     });
   } catch (e) {
     console.log(e);
