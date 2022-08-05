@@ -14,7 +14,9 @@
     "express": "^4.17.1",
     "inspector-api": "^1.4.1",
     "knex": "^0.21.21",
-    "sqlite3": "^5.0.2"
+    "request": "^2.88.2",
+    "sqlite3": "^5.0.2",
+    "yieldable-json": "^2.0.1"
   },
   "devDependencies": {
     "get-port-sync": "^1.0.1",
