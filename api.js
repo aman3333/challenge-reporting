@@ -1,16 +1,5 @@
 const knex = require("./db");
-const request = require("request");
-const yj = require("yieldable-json");
-let studentgradesData = [];
-request(
-  "https://outlier-coding-test-data.netlify.app/grades.json",
-  function (error, response, body) {
-    yj.parseAsync(body, null, 32, (err, data) => {
-      if (!err) studentgradesData = data;
-    });
-
-  }
-);
+let studentgradesData = require("./grades.json");
 
 async function getHealth(req, res, next) {
   try {
